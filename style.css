@@ -8,25 +8,28 @@ body {
 /* Navigációs sáv */
 .navbar {
     background-color: #007bff;
+    display: flex;
+    justify-content: center; /* Menüpontok középre igazítása */
+    align-items: center;
+    padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Finom árnyék a sávhoz */
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
+    margin: 0 10px; /* Távolság a menüpontok között */
+    padding: 10px 20px; /* Belül térköz a linkeknél */
+    border-radius: 20px; /* Lekerekített sarkok */
+    transition: background-color 0.3s ease; /* Simább hover animáció */
 }
 
 .navbar a:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Sötétebb háttér hoverre */
 }
 
 /* Szekciók */
@@ -39,27 +42,9 @@ h2 {
     text-align: center;
 }
 
-/* Képek és leírás stílusa */
-.image-section {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.img {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.description {
-    margin-top: 10px;
+p {
+    text-align: justify;
     color: #555;
     font-size: 16px;
     line-height: 1.5;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
 }

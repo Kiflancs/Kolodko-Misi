@@ -48,3 +48,18 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+/* Reszponzív képek kezelése */
+.img {
+    max-width: 100%; /* A kép soha nem lesz szélesebb a szülő eleménél */
+    height: auto; /* Az arányok megtartása */
+    object-fit: cover; /* Ha szükséges, illeszkedik a konténerbe */
+    display: block;
+    margin: 0 auto; /* Kép középre igazítása */
+}
+
+/* A szülő konténer beállítása */
+.image-section {
+    max-width: 90%; /* A kép ne foglalja el az egész képernyőt, adjunk neki margót */
+    margin: 20px auto; /* A szekció középre igazítása */
+    text-align: center; /* Középre igazítja a tartalmat */
+}

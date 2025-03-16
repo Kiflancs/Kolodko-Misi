@@ -1,71 +1,45 @@
-/* Alap stílusok */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Navigációs sáv */
-.navbar {
+nav {
     background-color: #007bff;
-    display: flex;
-    justify-content: center; /* Menüpontok középre igazítása */
-    align-items: center;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Finom árnyék a sávhoz */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-.navbar a {
+nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px; /* Távolság a menüpontok között */
-    padding: 10px 20px; /* Belül térköz a linkeknél */
-    border-radius: 20px; /* Lekerekített sarkok */
-    transition: background-color 0.3s ease; /* Simább hover animáció */
+    margin: 0 15px;
+    font-size: 18px;
 }
 
-.navbar a:hover {
-    background-color: #0056b3; /* Sötétebb háttér hoverre */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
 }
 
-/* Képek szekció */
-.container {
-    padding: 80px 20px; /* Hely a fix navigáció miatt */
-}
-
-/* Konténer a képek és leírások számára */
-.image-section {
-    display: inline-block; /* Egy vonalban legyenek a képek */
-    width: 30%; /* Egy konténer szélessége a szülő szélességének 30%-a */
-    margin: 1%; /* Egy kis térköz a konténerek között */
-    vertical-align: top;
+.gallery div {
+    margin: 10px;
     text-align: center;
-    border: 1px solid #ddd; /* Szürke keret a kockák körül */
-    border-radius: 10px; /* Lekerekített sarkok */
-    overflow: hidden; /* Tartalom ne lógjon ki */
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Árnyék */
 }
 
-/* A képek méretezése */
-.image-section img {
-    max-width: 100%;
-    max-height: 200px; /* A kép maximális magassága, hogy ne legyen túl nagy */
-    height: auto; /* Megőrzi az arányokat */
-    border-radius: 5px; /* Lekerekítés a képnek */
-    margin-bottom: 10px;
+.gallery img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
 }
 
-/* A leírások megjelenítése */
-.image-section .description {
+.caption {
+    margin-top: 10px;
     font-size: 14px;
-    line-height: 1.5;
-    color: #555;
-    text-align: justify;
 }
-Sent
-Write to

@@ -10,7 +10,6 @@ background-size: cover;
 background-position: center;
 }
 
-/* Főcím és Menü - Lekerekített Téglalap */
 .rounded-container {
 background-color: #007bff;
 color: white;
@@ -45,7 +44,6 @@ font-weight: bold;
 text-decoration: underline;
 }
 
-/* Flip Card */
 .flip-card {
 background-color: transparent;
 perspective: 1000px;
@@ -76,36 +74,33 @@ padding: 15px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Front Side - Kör alakú kép */
 .flip-card-front {
 background-color: #fff;
 display: flex;
 align-items: center;
 justify-content: center;
-border-radius: 50%; /* Kör alakú forma */
+border-radius: 50%;
 overflow: hidden;
 border: none;
-padding: 5px; /* Kis térköz a szélek körül */
+padding: 5px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .flip-card-front img {
 width: 100%;
 height: 100%;
-object-fit: cover; /* Kitölti a kör alakú keretet, arányos marad */
-border-radius: 50%; /* Kör alakú forma */
+object-fit: cover;
+border-radius: 50%;
 }
 
-/* Back Side */
 .flip-card-back {
 background-color: #007bff;
 color: #fff;
 transform: rotateY(180deg);
 overflow-y: auto;
 text-align: justify;
-border-radius: 10px; /* Enyhén lekerekített sarkok */
+border-radius: 10px;
 }
-/* Főcím és Menü - Lekerekített Téglalap */
 .rounded-container {
     background-color: #007bff;
     color: white;
@@ -140,47 +135,44 @@ border-radius: 10px; /* Enyhén lekerekített sarkok */
     text-decoration: underline;
 }
 
-/* Életrajz szöveg - Átlátszó kocka */
 .bio-box {
-    background-color: rgba(0, 0, 0, 0.1); /* Átlátszó fekete háttér */
-    color: black; /* Fekete szöveg */
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 .text-box {
-  background-color: rgba(0, 0, 0, 0.7); /* Fekete átlátszó háttér */
-  color: #fff; /* Fehér szöveg */
-  padding: 20px; /* Belső margó a szöveg körül */
-  border-radius: 15px; /* Lekerekített sarkok */
-  max-width: 800px; /* Maximális szélesség */
-  margin: 20px auto; /* Középre igazítás és külső margó */
-  font-family: Arial, sans-serif; /* Szöveg betűtípusa */
-  line-height: 1.6; /* Szövegsorok távolsága */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Árnyék a doboz körül */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
  
- /* Link stílusok a szövegen belül */
  .text-box a {
-     color: #ffd700; /* Aranyszínű link */
+     color: #ffd700;
      color: #ffd700;
      text-decoration: underline;
  }
  
  .text-box a:hover {
-     color: #ffffff; /* Fehér szöveg, ha az egér fölé kerül */
+     color: #ffffff;
      color: #ffffff;
      text-decoration: none;
  }
  
- /* Reagáló (reszponzív) beállítások kisebb képernyőkre */
  @media (max-width: 768px) {
      .rounded-container {
-         padding: 10px 20px; /* Kevesebb tér kisebb kijelzőkön */
+         padding: 10px 20px;
          padding: 10px 20px;
      }
      .text-box {
-         padding: 15px; /* Kisebb kocka szövegdoboz */
+         padding: 15px;
      }
  }

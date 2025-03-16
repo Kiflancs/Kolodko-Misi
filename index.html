@@ -3,48 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kolodko Projekt</title>
-    <!-- CSS csatolása -->
-    <link rel="stylesheet" href="style.css">
+    <title>Kolodko Szobrok</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigációs sáv -->
-    <nav class="navbar">
-        <a href="#kepek">Képek</a>
-        <a href="#utvonal">Útvonal</a>
-        <a href="#kapcsolat">Kapcsolat</a>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Térkép</a>
+        <a href="#">Kolodko Bemutatása</a>
     </nav>
-
-    <!-- Képek szekció -->
-    <section id="kepek" class="container">
-        <h2>Képek és Leírások</h2>
-        <div class="image-section">
-            <img src="kepek/Lecso.jpg" alt="Szobor 1">
-            <p class="description">Ez az első szobor rövid leírása, amely magában foglalja a művész történetét és a szobor jelentőségét.</p>
+    <div class="gallery">
+        <div>
+            <img src="drakula.jpg" alt="Drakula">
+            <div class="caption">Kolodko Drakula szobra</div>
         </div>
-        <div class="image-section">
-            <img src="kepek/Tank.jpg" alt="Szobor 2">
-            <p class="description">Ez a második szobor, amely bemutatja a művész koncepcióját és a helyszín különlegességét.</p>
+        <div>
+            <img src="holdjaro.jpg" alt="Holdjáró">
+            <div class="caption">Kolodko Holdjáró szobra</div>
         </div>
-        <div class="image-section">
-            <img src="kepek/szobor3.jpg" alt="Szobor 3">
-            <p class="description">Ez a harmadik szobor leírása, amely tartalmazza a történelmi hátteret és a közönség reakcióit.</p>
+        <div>
+            <img src="mini_balta.jpg" alt="Mini Balta">
+            <div class="caption">Kolodko Mini Balta szobra</div>
         </div>
-    </section>
-
-    <!-- Útvonal szekció -->
-    <section id="utvonal" class="container">
-        <h2>Útvonal</h2>
-        <p>Itt találhatók az ajánlott kirándulási útvonalak és a szobrok elérhetőségei.</p>
-        <a href="https://www.google.com/maps" target="_blank" class="btn btn-primary">Google Térkép</a>
-    </section>
-
-    <!-- Kapcsolat szekció -->
-    <section id="kapcsolat" class="container">
-        <h2>Kapcsolat</h2>
-        <p>Email: <a href="mailto:info@kolodko-projekt.hu">info@kolodko-projekt.hu</a></p>
-    </section>
-
-    <script src="scripts.js"></script>
+        <div>
+            <img src="mr_bean.jpg" alt="Mr. Bean Mackója">
+            <div class="caption">Kolodko Mr. Bean Mackója szobra</div>
+        </div>
+    </div>
 </body>
 </html>

@@ -4,48 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolodko Szobrok</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Horizontal Menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Kolodko Projekt</a>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Térkép</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kolodko Bemutatása</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kepek">Képek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#utvonal">Útvonal</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Gallery Section -->
+    <!-- Galéria szekció -->
     <div class="container mt-4">
         <div class="row">
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="kepek/Tank.jpg" alt="Drakula" class="img-fluid rounded">
-                <p><strong>Drakula</strong>: Kolodko Drakula szobránál sokat morfondíroztunk...</p>
+            <!-- Lecso kép -->
+            <div class="col-6 col-md-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="lecso.jpg" alt="Lecso" class="img-fluid">
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Lecso:</strong> Ez a szobor a magyaros ízek és a tradíciók egyedülálló szimbóluma...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="holdjaro.jpg" alt="Holdjáró" class="img-fluid rounded">
-                <p><strong>Holdjáró</strong>: A Szabadság tér Budapest belvárosában...</p>
+            <!-- Tank kép -->
+            <div class="col-6 col-md-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="tank.jpg" alt="Tank" class="img-fluid">
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Tank:</strong> A Kolodko Tank szobor a történelem és a humor elegáns összefonódása...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="mini_balta.jpg" alt="Mini Balta" class="img-fluid rounded">
-                <p><strong>Mini Balta</strong>: A 'The Axe' miniszobor Mihály Kolodko ukrán...</p>
+            <!-- Bom kép -->
+            <div class="col-6 col-md-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="bom.jpg" alt="Bom" class="img-fluid">
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Bom:</strong> A Bom szobor a modern művészet különleges kifejeződése...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="mr_bean.jpg" alt="Mr. Bean Mackója" class="img-fluid rounded">
-                <p><strong>Mr. Bean Mackója</strong>: A Kolodko Mihály 'Mr. Bean mackója'...</p>
+            <!-- Gilinyo kép -->
+            <div class="col-6 col-md-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="gilinyo.jpg" alt="Gilinyo" class="img-fluid">
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Gilinyo:</strong> A Gilinyo szobor játékossága és lendülete különleges hangulatot teremt...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

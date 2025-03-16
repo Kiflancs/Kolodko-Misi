@@ -105,3 +105,47 @@ body {
     text-align: justify;
     border-radius: 10px; /* Enyhén lekerekített sarkok */
 }
+/* Főcím és Menü - Lekerekített Téglalap */
+.rounded-container {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    margin: 20px auto;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Életrajz szöveg - Átlátszó kocka */
+.bio-box {
+    background-color: rgba(0, 0, 0, 0.1); /* Átlátszó fekete háttér */
+    color: black; /* Fekete szöveg */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+    margin-top: 20px;
+}

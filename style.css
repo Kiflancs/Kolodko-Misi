@@ -149,3 +149,43 @@ border-radius: 10px; /* Enyhén lekerekített sarkok */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Finom árnyék */
     margin-top: 20px;
 }
+.text-box {
+     background-color: rgba(0, 0, 0, 0.8); /* Fekete, 80% átlátszósággal */
+     color: white; /* Fehér szöveg */
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     padding: 20px;
+     border-radius: 15px; /* Kerekített sarkok */
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Finom árnyék */
+     border-radius: 15px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+     margin-top: 20px;
+     max-width: 900px; /* A kocka maximális szélessége */
+     max-width: 900px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ /* Link stílusok a szövegen belül */
+ .text-box a {
+     color: #ffd700; /* Aranyszínű link */
+     color: #ffd700;
+     text-decoration: underline;
+ }
+ 
+ .text-box a:hover {
+     color: #ffffff; /* Fehér szöveg, ha az egér fölé kerül */
+     color: #ffffff;
+     text-decoration: none;
+ }
+ 
+ /* Reagáló (reszponzív) beállítások kisebb képernyőkre */
+ @media (max-width: 768px) {
+     .rounded-container {
+         padding: 10px 20px; /* Kevesebb tér kisebb kijelzőkön */
+         padding: 10px 20px;
+     }
+     .text-box {
+         padding: 15px; /* Kisebb kocka szövegdoboz */
+     }
+ }

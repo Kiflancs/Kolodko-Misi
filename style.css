@@ -6,14 +6,40 @@ body {
     color: #333;
 }
 
-h1 {
-    font-size: 2.5rem;
+/* Lekerekített téglalap stílusok */
+.rounded-box {
+    background-color: #007bff;
+    color: white;
     text-align: center;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav {
-    margin-bottom: 20px;
+.rounded-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ffd700; /* Aranyszín a lebegésnél */
 }
 
 /* Flip Card */
@@ -21,7 +47,7 @@ nav {
     background-color: transparent;
     perspective: 1500px;
     width: 100%;
-    max-width: 400px; /* Nagyobb szélesség az esszékhez */
+    max-width: 350px; /* Szélesebb, hogy a képek és esszék illeszkedjenek */
     margin: 0 auto;
     height: 450px; /* Magasság az esszékhez */
 }
@@ -45,17 +71,26 @@ nav {
     height: 100%;
     backface-visibility: hidden;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
     padding: 20px;
+    overflow: hidden;
 }
 
-/* Front Side */
+/* Front Side - Kör alakú kép */
 .flip-card-front {
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%; /* Kör alak */
+    overflow: hidden;
+    border: none;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Töltse ki a területet */
+    border-radius: 50%; /* Kör alakú kép */
 }
 
 /* Back Side */
@@ -68,4 +103,5 @@ nav {
     padding: 20px;
     font-size: 14px;
     line-height: 1.6;
+    border-radius: 15px; /* Lekerekített sarkok a kockánál */
 }

@@ -1,23 +1,29 @@
 body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
     font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 nav {
     margin-bottom: 20px;
 }
 
+/* Flip Card */
 .flip-card {
     background-color: transparent;
     perspective: 1500px;
-    height: 400px; /* Magasság növelése az esszékhöz */
+    width: 100%;
+    max-width: 400px; /* Nagyobb szélesség az esszékhez */
+    margin: 0 auto;
+    height: 450px; /* Magasság az esszékhez */
 }
 
 .flip-card-inner {
@@ -40,10 +46,11 @@ nav {
     backface-visibility: hidden;
     border: 1px solid #ddd;
     border-radius: 10px;
-    overflow-y: auto; /* Görgetés az esszékhez */
-    padding: 15px;
+    overflow: hidden;
+    padding: 20px;
 }
 
+/* Front Side */
 .flip-card-front {
     background-color: #fff;
     display: flex;
@@ -51,9 +58,14 @@ nav {
     justify-content: center;
 }
 
+/* Back Side */
 .flip-card-back {
     background-color: #007bff;
     color: #fff;
     transform: rotateY(180deg);
     text-align: justify;
+    overflow-y: auto; /* Görgetési lehetőség a hosszabb szövegekhez */
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
 }

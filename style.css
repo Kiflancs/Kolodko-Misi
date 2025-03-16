@@ -72,20 +72,24 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Front Side */
+/* Front Side - Kör alakú kép */
 .flip-card-front {
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%; /* Kör alakú forma */
     overflow: hidden;
-    border-radius: 50%; /* Kör alakú kép */
+    border: none;
+    padding: 5px; /* Kis térköz a szélek körül */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .flip-card-front img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Kitölti a kör alakú keretet, arányos marad */
+    border-radius: 50%; /* Kör alakú forma */
 }
 
 /* Back Side */
@@ -95,4 +99,5 @@ body {
     transform: rotateY(180deg);
     overflow-y: auto;
     text-align: justify;
+    border-radius: 10px; /* Enyhén lekerekített sarkok */
 }

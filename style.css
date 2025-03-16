@@ -1,83 +1,76 @@
+/* Alapvető beállítások */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
     color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-nav {
-    background-color: #3a3a3a;
-    color: #f0f0f0;
-    padding: 10px 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Navigációs menü stílusok */
+.navbar {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    color: #f0f0f0;
-    text-decoration: none;
+.navbar a.nav-link {
     font-size: 16px;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 3px;
+    color: #333;
 }
 
-nav a:hover {
-    background-color: #575757;
+.navbar a.nav-link:hover {
+    color: #007bff;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-}
-
-.gallery div {
-    margin: 10px;
-    text-align: center;
-}
-
-.gallery img {
-    width: 150px;
-    height: auto;
-    border: 1px solid #bbb;
-    border-radius: 5px;
-}
-
-.caption {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
+/* Galéria stílusok */
 .container {
-    margin: 20px;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.img-fluid {
+    width: 100%;
+    max-width: 120px; /* Kép maximális szélessége */
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Útvonal szekció */
+#utvonal {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
 }
 
-h2 {
-    text-align: center;
+#utvonal h2 {
     color: #333;
+    text-align: center;
 }
 
-.btn-neutral {
+.btn-outline-primary {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #ccc;
-    color: #333;
-    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
     border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
     text-align: center;
 }
 
-.btn-neutral:hover {
-    background-color: #aaa;
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
 }

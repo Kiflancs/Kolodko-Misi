@@ -177,11 +177,11 @@ border-radius: 10px;
      }
  }
 .nav-link {
-    color: white; /* Ensures the links are white */
-    text-decoration: none; /* Removes the underline */
+    color: white;
+    text-decoration: none;
 }
 
 .nav-link:hover {
-    color: lightgray; /* Optional: Changes color on hover for better usability */
-    text-decoration: underline; /* Optional: Adds underline on hover */
+    color: lightgray;
+    text-decoration: underline;
 }
